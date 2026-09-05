@@ -2,6 +2,8 @@
 
 Live: https://ricksanchez.radrebeldeveloper.com
 
+![Rick Sanchez site demo](demo.gif)
+
 A fan-made concept site for the smartest man in the universe, built as an entry
 for the [Motion.page animation contest](https://motion.page/contest/). Layout
 and motion language are inspired by [trevornoah.com](https://www.trevornoah.com/)
