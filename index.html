@@ -1,0 +1,383 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rick Sanchez — Rick and Morty Season Hub | Fan Site</title>
+<meta name="description" content="Rick Sanchez, the smartest man in the universe. Watch Rick and Morty, play the games, follow the feeds, buy the stuff. New episodes Sundays at 11pm EST, only on Adult Swim. Fan-made concept site.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500;600;700;800&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="icon" href="assets/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+<link rel="icon" type="image/png" sizes="512x512" href="assets/favicon-512.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="stylesheet" href="styles.css?v=1788608331">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- ================= HEADER ================= -->
+<header id="siteHeader" class="header">
+  <a id="wordmark" class="logo" href="#top" aria-label="Rick Sanchez, home">Rick Sanchez</a>
+  <div class="nav-wrap">
+    <button id="soundToggle" class="sound" type="button" aria-pressed="false" aria-label="Play music"><span class="sound-bar"></span><span class="sound-bar"></span><span class="sound-bar"></span></button>
+    <button id="menuToggle" class="burger" type="button" aria-expanded="false" aria-controls="menuOverlay" aria-label="Open menu">
+      <span class="burger-line"></span>
+      <span class="burger-line"></span>
+    </button>
+    <a id="ctaTickets" class="button" href="https://www.adultswim.com/videos/rick-and-morty" target="_blank" rel="noopener"><span class="button-pill"></span><span class="button-label">Watch Now</span></a>
+  </div>
+</header>
+
+<!-- ================= MENU OVERLAY ================= -->
+<div id="menuOverlay" class="menu" role="dialog" aria-modal="true" aria-label="Site menu" hidden>
+  <div class="menu-head">
+    <img class="menu-face" src="assets/head2.png" alt="" width="556" height="1436">
+    <div class="menu-bubble" aria-hidden="true">I'm Pickle Riiick! Pick one.</div>
+  </div>
+  <div class="menu-inner">
+    <button id="menuClose" class="menu-close" type="button" aria-label="Close menu">Close</button>
+    <nav class="menu-list" aria-label="Primary">
+      <a class="menu-link" href="https://www.adultswim.com/rick-and-morty#watch" target="_blank" rel="noopener">Watch</a>
+      <a class="menu-link" href="https://www.adultswim.com/rick-and-morty#play" target="_blank" rel="noopener">Play</a>
+      <a class="menu-link" href="https://www.adultswim.com/rick-and-morty#social" target="_blank" rel="noopener">Social</a>
+      <a class="menu-link" href="https://wbshop.com/collections/rick-and-morty" target="_blank" rel="noopener">Shop</a>
+      <a class="menu-link" href="https://www.adultswim.com/rick-and-morty" target="_blank" rel="noopener">Season Hub</a>
+      <a class="menu-link is-small" href="terms.html">Terms</a>
+    </nav>
+    <div class="menu-foot">
+      <span>New Episodes Sundays at 11pm EST</span>
+      <span>Only on Adult Swim</span>
+    </div>
+  </div>
+</div>
+
+<main id="main">
+
+<!-- ================= HERO ================= -->
+<section id="top" class="hero">
+  <h1 id="heroName" class="hero-name" aria-label="Rick Sanchez">
+    <span class="name-word"><span class="name-char">R</span><span class="name-char">i</span><span class="name-char">c</span><span class="name-char">k</span></span>
+    <span class="name-word"><span class="name-char">S</span><span class="name-char">a</span><span class="name-char">n</span><span class="name-char">c</span><span class="name-char">h</span><span class="name-char">e</span><span class="name-char">z</span></span>
+  </h1>
+
+  <div id="headScene" class="head-scene" aria-hidden="true">
+    <img id="portalGlow" class="portal-glow" src="assets/portal1.png" alt="" width="638" height="632">
+    <div class="head-props">
+      <img id="propShip"  class="prop prop-ship"  src="assets/ship.png"  alt="" width="900" height="615">
+      <img id="propBrain" class="prop prop-brain" src="assets/brain.png" alt="" width="900" height="733">
+      <img id="propGun"   class="prop prop-gun"   src="assets/gun.png"   alt="" width="821" height="900">
+      <img id="propFlask" class="prop prop-flask" src="assets/flask.png" alt="" width="688" height="900">
+      <img id="propBox"   class="prop prop-box"   src="assets/box.png"   alt="" width="872" height="900">
+    </div>
+    <div id="headFace" class="head-face">
+      <img src="assets/head-face.png" alt="Rick Sanchez, head torn open, inventions spilling out" width="867" height="746">
+      <span class="pupil pupil-l" style="left:38.52%;top:42.36%"></span>
+      <span class="pupil pupil-r" style="left:77.1%;top:37.87%"></span>
+    </div>
+  </div>
+
+  <!-- fixed "New Season" widget, bottom-left -->
+  <aside id="latestCard" class="widget" aria-label="New season. Hover to expand.">
+    <a class="widget-card" href="https://www.adultswim.com/rick-and-morty#watch" target="_blank" rel="noopener">
+      <div class="widget-poster">
+        <img class="widget-poster-img" src="assets/season9.jpg" alt="" width="980" height="670">
+        <span class="widget-poster-tag">Adult Swim</span>
+        <span class="widget-poster-title">Rick and Morty<br>Season 9</span>
+        <span class="widget-poster-sub">New Episodes Sundays at 11pm EST</span>
+      </div>
+    </a>
+    <div class="widget-tag-wrap">
+      <span class="widget-tag">New Season</span>
+      <div class="widget-marquee" aria-hidden="true">
+        <div class="widget-marquee-track">
+          <span>New Episodes Sundays at 11pm EST &nbsp;•&nbsp; Only on Adult Swim &nbsp;•&nbsp;</span>
+          <span>New Episodes Sundays at 11pm EST &nbsp;•&nbsp; Only on Adult Swim &nbsp;•&nbsp;</span>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+
+  <!-- pill nav under the head: the four official hub tabs -->
+  <nav id="heroLinks" class="hero-pills" aria-label="Rick and Morty hub">
+    <a class="pill" href="https://www.adultswim.com/rick-and-morty#watch" target="_blank" rel="noopener">watch</a>
+    <a class="pill" href="https://www.adultswim.com/rick-and-morty#play" target="_blank" rel="noopener">play</a>
+    <a class="pill" href="https://www.adultswim.com/rick-and-morty#social" target="_blank" rel="noopener">social</a>
+    <a class="pill" href="https://wbshop.com/collections/rick-and-morty" target="_blank" rel="noopener">shop</a>
+  </nav>
+</section>
+
+<!-- ================= STATEMENT ================= -->
+<section id="statement" class="section statement">
+  <div class="container">
+    <h2 id="statementText" class="statement-text">
+      <span class="line-wrap"><span class="line">New episodes</span></span>
+      <span class="line-wrap"><span class="line">Sundays at 11pm EST.</span></span>
+      <span class="line-wrap"><span class="line">Only on Adult Swim.</span></span>
+      <span class="line-wrap"><span class="line">Get your mouth ’round season 9.</span></span>
+    </h2>
+  </div>
+</section>
+
+<!-- ================= WATCH ================= -->
+<section id="media" class="section media">
+  <div class="container">
+    <div class="section-title">
+      <h3 class="section-title-1"><span class="line-wrap"><span class="line">Watch</span></span></h3>
+      <h3 class="section-title-2"><span class="line-wrap"><span class="line">Rick and Morty</span></span></h3>
+    </div>
+
+    <div id="screenWrap" class="screen-wrap">
+      <a id="mediaCard1" class="card-peel is-1" href="https://www.adultswim.com/streams/rick-and-morty" target="_blank" rel="noopener">
+        <div class="card-art art-1"><span>Rick and Morty<br>Marathon</span><small>Get your mouth ’round season 9</small></div>
+      </a>
+      <a id="mediaCard2" class="card-peel is-2" href="https://www.max.com/shows/rick-and-morty/ab553cdc-e15d-4597-b65f-bec9201fd2dd" target="_blank" rel="noopener">
+        <div class="card-art art-2"><span>HBO Max</span><small>Watch Season 8, now on HBO Max</small></div>
+      </a>
+      <a id="mediaCard3" class="card-peel is-3" href="https://www.adultswim.com/videos/rick-and-morty" target="_blank" rel="noopener">
+        <div class="card-art art-3"><span>Adult Swim</span><small>Full Episodes and Extras</small></div>
+      </a>
+      <a id="mediaCard4" class="card-peel is-4" href="https://fanflix.co/c/1m2a583uw60dc-rick-and-morty-s9-drafting-instagram" target="_blank" rel="noopener">
+        <div class="card-art art-4"><span>Own on<br>Digital</span><small>S9 Episodes available now</small></div>
+      </a>
+
+      <a id="screenPlayer" class="screen-player" href="https://www.adultswim.com/videos/rick-and-morty" target="_blank" rel="noopener" aria-label="Morty Meets Sober Rick, early preview on Adult Swim">
+        <div class="screen-frame">
+          <img class="screen-still" src="assets/episode.jpg" alt="There’s Something About Morty, Rick and Morty season 9" width="1400" height="788">
+          <span class="play" aria-hidden="true"></span>
+        </div>
+        <div class="screen-bar"><span class="screen-dot"></span><span class="screen-title">There’s Something About Morty · S9 E1</span><span class="screen-track"><i></i></span></div>
+      </a>
+
+      <div id="screenFlask" class="screen-flask" aria-hidden="true">
+        <div id="flaskImg" class="flask-group">
+          <div class="flask-cavity"><div id="flaskLiquid" class="flask-liquid"><i class="fb fb1"></i><i class="fb fb2"></i><i class="fb fb3"></i><i class="fb fb4"></i></div></div>
+          <img class="flask-glass" src="assets/flask-glass.png" alt="" width="688" height="900">
+        </div>
+        <svg class="pour-stream" viewBox="0 0 40 300" preserveAspectRatio="none">
+          <path d="M14 0 C 8 40, 22 90, 16 150 C 10 210, 24 250, 18 300 L 26 300 C 32 250, 18 210, 24 150 C 30 90, 16 40, 26 0 Z" fill="#7cf04a"/>
+          <path d="M18 0 C 15 40, 21 90, 19 150 C 17 210, 22 250, 21 300 L 23 300 C 24 250, 19 210, 21 150 C 23 90, 17 40, 22 0 Z" fill="#d7ff8a" opacity=".8"/>
+        </svg>
+        <span class="pour-drop d1"></span><span class="pour-drop d2"></span><span class="pour-drop d3"></span>
+        <div class="puddle"></div>
+      </div>
+    </div>
+
+    <div class="center">
+      <a class="button is-large" href="https://www.adultswim.com/videos/rick-and-morty" target="_blank" rel="noopener"><span class="button-pill"></span><span class="button-label">Full Episodes and Extras</span></a>
+    </div>
+  </div>
+</section>
+
+<div id="wubba" class="section-transition to-dark band" aria-label="Wubba Lubba Dub-Dub">
+  <div id="wubbaTrack" class="band-track" aria-hidden="true">
+    <span class="band-text">Wubba Lubba Dub-Dub! &nbsp;</span><span class="band-text is-outline">Wubba Lubba Dub-Dub! &nbsp;</span>
+    <span class="band-text">Wubba Lubba Dub-Dub! &nbsp;</span><span class="band-text is-outline">Wubba Lubba Dub-Dub! &nbsp;</span>
+  </div>
+  <p class="band-note">Rick’s catchphrase. It means “I am in great pain, please help me.”</p>
+</div>
+
+<!-- ================= ABOUT ================= -->
+<section id="about" class="section about is-dark">
+  <div class="container">
+    <div class="section-title">
+      <h3 class="section-title-1"><span class="line-wrap"><span class="line">About</span></span></h3>
+      <h3 class="section-title-2"><span class="line-wrap"><span class="line">This Guy</span></span></h3>
+    </div>
+
+    <div id="aboutIntro" class="about-intro">
+      <img id="aboutHead" class="about-head" src="assets/side2.png" alt="Rick Sanchez as Einstein, E equals M C squared" width="534" height="749">
+      <div id="aboutStatement" class="about-statement">
+        <p>
+          <span class="line-wrap"><span class="line">The smartest man</span></span>
+          <span class="line-wrap"><span class="line">in the universe.</span></span>
+          <span class="line-wrap"><span class="line">Unfortunately.</span></span>
+        </p>
+        <img id="aboutPortal" class="about-portal" src="assets/portal1.png" alt="" width="638" height="632">
+      </div>
+    </div>
+
+    <div class="row about-row">
+      <div id="aboutLabel" class="tag-title">Rick Sanchez</div>
+      <div class="separator"></div>
+      <div id="aboutBio" class="about-bio">
+        <p>A sociopathic genius scientist who drags his inherently timid grandson on insanely dangerous adventures across the universe. Rick and Morty is created by Justin Roiland and Dan Harmon and airs on Adult Swim. He would like you to know he did not agree to any of this.</p>
+        <a id="aboutCta" class="button is-large" href="https://www.adultswim.com/rick-and-morty" target="_blank" rel="noopener"><span class="button-pill"></span><span class="button-label">Season Hub</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= LATEST ================= -->
+<section id="news" class="section news is-dark">
+  <div class="container">
+    <div class="section-title">
+      <h3 class="section-title-1"><span class="line-wrap"><span class="line">Latest</span></span></h3>
+      <h3 class="section-title-2"><span class="line-wrap"><span class="line">Where’s Rick?</span></span></h3>
+    </div>
+
+    <ol id="newsList" class="news-list">
+      <li class="news-item">
+        <span class="news-line"></span>
+        <div class="news-row">
+          <span class="news-date">Early Preview</span>
+          <div class="news-body">
+            <h4 class="news-title">Morty Meets Sober Rick</h4>
+            <p class="news-copy">An early look at the new season. Rick, sober. Morty, not ready. Watch it before the internet ruins it for you.</p>
+          </div>
+          <a class="news-link" href="https://www.adultswim.com/videos/rick-and-morty" target="_blank" rel="noopener">Watch</a>
+        </div>
+      </li>
+      <li class="news-item">
+        <span class="news-line"></span>
+        <div class="news-row">
+          <span class="news-date">Teaser</span>
+          <div class="news-body">
+            <h4 class="news-title">Season 9 Trailer 2</h4>
+            <p class="news-copy">Seven new episodes: There’s Something About Morty, Ricks Days Seven Nights, A Ricker Runs Through It, Jer Bud, Mortgully: The Last Rickforest, Rickuiem Mort a Dream, Salute Your Morts.</p>
+          </div>
+          <a class="news-link" href="https://www.adultswim.com/videos/rick-and-morty" target="_blank" rel="noopener">Watch</a>
+        </div>
+      </li>
+      <li class="news-item">
+        <span class="news-line"></span>
+        <div class="news-row">
+          <span class="news-date">Sundays 11pm EST</span>
+          <div class="news-body">
+            <h4 class="news-title">Rick and Morty Marathon</h4>
+            <p class="news-copy">Catch up on Adult Swim, then stay for the new one. Season 8 is streaming on HBO Max.</p>
+          </div>
+          <a class="news-link" href="https://www.adultswim.com/streams/rick-and-morty" target="_blank" rel="noopener">Stream</a>
+        </div>
+      </li>
+      <li class="news-item">
+        <span class="news-line"></span>
+        <div class="news-row">
+          <span class="news-date">Coming in July</span>
+          <div class="news-body">
+            <h4 class="news-title">President Curtis</h4>
+            <p class="news-copy">A new series from the Rick and Morty universe. Rick has opinions about it. Rick has opinions about everything.</p>
+          </div>
+          <a class="news-link" href="https://www.adultswim.com/videos" target="_blank" rel="noopener">Details</a>
+        </div>
+        <span class="news-line"></span>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<div class="section-transition to-navy" aria-hidden="true"></div>
+
+<!-- ================= QUOTE ================= -->
+<section id="quote" class="section quote">
+  <div class="container">
+    <div id="quoteIcon" class="quote-icon" aria-hidden="true">“</div>
+    <blockquote id="quoteBlock" class="quote-block">
+      <p class="quote-text">
+        <span class="line-wrap"><span class="line">Sometimes science is</span></span>
+        <span class="line-wrap"><span class="line">more art than science.</span></span>
+        <span class="line-wrap"><span class="line">A lot of people don’t get that.</span></span>
+      </p>
+      <footer class="quote-meta">
+        <span class="tag-title">Rick Sanchez</span>
+        <span class="quote-source">Rick Potion #9, Season 1</span>
+        <span class="quote-date">Jan 27, 2014</span>
+      </footer>
+    </blockquote>
+    <img id="quoteHead" class="quote-head" src="assets/head-full.png" alt="" width="514" height="586">
+  </div>
+</section>
+
+<!-- ================= PLAY ================= -->
+<section id="play" class="section playsec">
+  <div class="container">
+    <div class="section-title">
+      <h3 class="section-title-1"><span class="line-wrap"><span class="line">Play</span></span></h3>
+      <h3 class="section-title-2"><span class="line-wrap"><span class="line">Fill The Void</span></span></h3>
+    </div>
+    <p id="playIntro" class="play-intro">Fill the void with Rick and Morty games.</p>
+    <div id="playGrid" class="play-grid">
+      <a class="card-peel play-card" href="https://www.adultswim.com/etcetera/elastic-man/" target="_blank" rel="noopener">
+        <div class="card-art art-1"><span>Elastic<br>Man</span><small>Play on Adult Swim</small></div>
+      </a>
+      <a class="card-peel play-card" href="http://store.steampowered.com/app/469610/" target="_blank" rel="noopener">
+        <div class="card-art art-3"><span>Virtual<br>Rick-ality</span><small>VR · Steam</small></div>
+      </a>
+      <a class="card-peel play-card" href="https://gorickyourself.com/" target="_blank" rel="noopener">
+        <div class="card-art art-2"><span>Go Rick<br>Yourself</span><small>gorickyourself.com</small></div>
+      </a>
+    </div>
+  </div>
+</section>
+
+
+<!-- ================= SHOP ================= -->
+<section id="books" class="section books">
+  <div class="container">
+    <div class="section-title">
+      <h3 class="section-title-1"><span class="line-wrap"><span class="line">Shop</span></span></h3>
+      <h3 class="section-title-2"><span class="line-wrap"><span class="line">Give Us $$$</span></span></h3>
+    </div>
+
+    <div id="bookShelf" class="book-shelf">
+      <a class="book b1" href="https://wbshop.com/collections/rick-and-morty" target="_blank" rel="noopener"><span class="book-title">Rick and Morty<br>Shop</span><span class="book-author">wbshop.com</span></a>
+      <a class="book b2" href="https://www.warnerbros.com/tv/rick-and-morty-seasons-1-7" target="_blank" rel="noopener"><span class="book-title">Seasons 1–7<br>Digital or Disc</span><span class="book-author">Warner Bros.</span></a>
+      <a class="book b3" href="https://fanflix.co/c/1m2a583uw60dc-rick-and-morty-s9-drafting-instagram" target="_blank" rel="noopener"><span class="book-title">Season 9<br>Own on Digital</span><span class="book-author">Available now</span></a>
+      <a class="book b4" href="http://store.steampowered.com/app/469610/" target="_blank" rel="noopener"><span class="book-title">Virtual<br>Rick-ality</span><span class="book-author">Steam</span></a>
+    </div>
+
+    <div class="center">
+      <a class="button is-large" href="https://wbshop.com/collections/rick-and-morty" target="_blank" rel="noopener"><span class="button-pill"></span><span class="button-label">Buy Stuff</span></a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer id="siteFooter" class="footer">
+  <div id="footerHead" class="footer-head" aria-hidden="true">
+    <div class="footer-bubble">Wubba lubba dub-dub. Now get a hobby.</div>
+    <img class="footer-face" src="assets/head2.png" alt="" width="556" height="1436">
+  </div>
+  <div class="container">
+    <div class="footer-grid">
+      <div></div>
+      <div>
+        <nav class="footer-nav" aria-label="Footer">
+          <a class="footer-link" href="https://www.adultswim.com/rick-and-morty#watch" target="_blank" rel="noopener">Watch</a>
+          <a class="footer-link" href="https://www.adultswim.com/rick-and-morty#play" target="_blank" rel="noopener">Play</a>
+          <a class="footer-link" href="https://www.adultswim.com/rick-and-morty#social" target="_blank" rel="noopener">Social</a>
+          <a class="footer-link" href="https://wbshop.com/collections/rick-and-morty" target="_blank" rel="noopener">Shop</a>
+          <a class="footer-link" href="https://www.adultswim.com/rick-and-morty" target="_blank" rel="noopener">Season Hub</a>
+        </nav>
+        <div class="footer-foot">
+          <div class="copyright">
+            <span>©RickSanchez2026</span>
+            <a href="https://www.adultswim.com/rick-and-morty" target="_blank" rel="noopener">adultswim.com/rick-and-morty</a>
+            <a href="terms.html">Terms &amp; Disclaimer</a>
+            <span>Fan-made concept site. Not affiliated with Adult Swim, Cartoon Network or Warner Bros. Discovery.</span>
+          </div>
+          <ul class="footer-socials" aria-label="Rick and Morty on social">
+            <li><a href="https://www.facebook.com/RickandMorty/" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M13.5 22v-8h2.7l.4-3.2h-3.1V8.8c0-.9.3-1.6 1.6-1.6h1.7V4.4c-.3 0-1.3-.1-2.5-.1-2.5 0-4.1 1.5-4.1 4.2v2.3H7.4V14h2.8v8h3.3z"/></svg></a></li>
+            <li><a href="https://www.instagram.com/rickandmorty/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M12 7.3a4.7 4.7 0 1 0 0 9.4 4.7 4.7 0 0 0 0-9.4zm0 7.7a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm5.2-8a1.1 1.1 0 1 1-2.2 0 1.1 1.1 0 0 1 2.2 0zM12 4c2.6 0 2.9 0 3.9.1 2.6.1 3.9 1.4 4 4 .1 1 .1 1.3.1 3.9s0 2.9-.1 3.9c-.1 2.6-1.4 3.9-4 4-1 .1-1.3.1-3.9.1s-2.9 0-3.9-.1c-2.6-.1-3.9-1.4-4-4C4 14.9 4 14.6 4 12s0-2.9.1-3.9c.1-2.6 1.4-3.9 4-4C9.1 4 9.4 4 12 4z"/></svg></a></li>
+            <li><a href="https://twitter.com/RickandMorty" target="_blank" rel="noopener" aria-label="X"><svg viewBox="0 0 24 24"><path d="M17.5 3h3l-6.6 7.6L21.7 21h-6.1l-4.8-6.2L5.3 21h-3l7.1-8.1L2 3h6.2l4.3 5.7L17.5 3zm-1.1 16.2h1.7L7.1 4.7H5.3l11.1 14.5z"/></svg></a></li>
+            <li><a href="https://www.youtube.com/@adultswim/videos" target="_blank" rel="noopener" aria-label="YouTube"><svg viewBox="0 0 24 24"><path d="M21.6 7.2c-.2-.9-.9-1.6-1.8-1.8C18.2 5 12 5 12 5s-6.2 0-7.8.4c-.9.2-1.6.9-1.8 1.8C2 8.8 2 12 2 12s0 3.2.4 4.8c.2.9.9 1.6 1.8 1.8C5.8 19 12 19 12 19s6.2 0 7.8-.4c.9-.2 1.6-.9 1.8-1.8.4-1.6.4-4.8.4-4.8s0-3.2-.4-4.8zM10 15V9l5.2 3L10 15z"/></svg></a></li>
+            <li><a href="https://www.tiktok.com/@adultswim" target="_blank" rel="noopener" aria-label="TikTok"><svg viewBox="0 0 24 24"><path d="M16.5 3c.3 2.3 1.6 3.7 3.8 3.9v3.2c-1.4 0-2.7-.4-3.8-1.1v6.2c0 3.5-2.6 5.8-5.7 5.8S5 18.7 5 15.5c0-3.4 3-6 6.4-5.6v3.3c-1.6-.4-3.2.6-3.2 2.3 0 1.4 1.1 2.5 2.5 2.5 1.5 0 2.6-1.1 2.6-2.7V3h3.2z"/></svg></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>setTimeout(function(){if(typeof window.Motion!=="function"){document.documentElement.classList.add("mp-fallback");}},4000);</script>
+<audio id="theme" src="assets/theme.mp3" preload="auto"></audio>
+<script src="script.js?v=1788608331" defer></script>
+<script src="mp-sdk.js?v=1788608331" defer></script>
+<script src="mp-timeline.js?v=1788608331" defer></script>
+</body>
+</html>

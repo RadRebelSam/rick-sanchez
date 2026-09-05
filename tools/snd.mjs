@@ -1,0 +1,11 @@
+import { chromium } from 'playwright';
+const exe = 'C:/Users/Dexin/AppData/Local/ms-playwright/chromium_headless_shell-1228/chrome-headless-shell-win64/chrome-headless-shell.exe';
+const browser = await chromium.launch({ executablePath: exe, args: ['--autoplay-policy=no-user-gesture-required'] });
+const page = await browser.newPage({ viewport: { width: 1440, height: 900 } });
+const errs = []; page.on('pageerror', e => errs.push(e.message)); page.on('console', m => { if (m.type() === 'error') errs.push(m.text()); });
+await page.goto('http://localhost:5177/', { waitUntil: 'networkidle' });
+await page.waitForTimeout(2500);
+const st = await page.evaluate(() => { const a = document.getElementById('theme'); return { paused: a.paused, t: a.currentTime, dur: a.duration, src: a.currentSrc.split('/').pop(), err: a.error && a.error.code }; });
+console.log(JSON.stringify(st), 'errors', errs);
+await page.screenshot({ path: 'assets/raw/_snd.png', clip: { x: 1100, y: 0, width: 340, height: 80 } });
+await browser.close();
